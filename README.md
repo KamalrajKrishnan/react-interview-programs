@@ -1,16 +1,49 @@
-# React + Vite
+# React Interview Programs
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A collection of React interview questions, concepts, coding programs, and practical examples for React developer interview preparation.
 
-Currently, two official plugins are available:
+## React + Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is built with React and Vite and provides a fast development environment with HMR (Hot Module Replacement).
+
+## Getting Started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at the URL shown in the terminal.
+
+## Features
+
+* React interview questions
+* React coding programs
+* JavaScript interview programs
+* React hooks examples
+* Practical React examples
+* Interview preparation resources
+
+## Vite
+
+This project uses Vite for development and production builds.
+
+Vite provides fast Hot Module Replacement (HMR) during development.
+
+## React Plugins
+
+The project can use the official React Vite plugins:
+
+* `@vitejs/plugin-react`
+* `@vitejs/plugin-react-swc`
 
 ## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+The React Compiler is not enabled by default in this project. It can be enabled if required based on the project's performance and compatibility requirements.
