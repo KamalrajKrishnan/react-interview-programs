@@ -1,41 +1,67 @@
 import React from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Home = () => {
-    const navigate = useNavigate();
+
+    const menuItems = [
+        {
+            path: "/ReadArrayElements",
+            title: "Find Common Elements in an Object"
+        },
+        {
+            path: "/MoveZeroToEnd",
+            title: "Move Zero To End"
+        },
+        {
+            path: "/UseRefHook",
+            title: "UseRef Hook"
+        },
+        {
+            path: "/numbersummation",
+            title: "Divide by 3 & 5 Sum"
+        },
+        {
+            path: "/timer",
+            title: "Timer"
+        },
+        {
+            path: "/stringreverse",
+            title: "Reverse String Sentence"
+        }
+    ];
 
     return (
-        <>
-        
-            <h5>Click below links</h5>
-        <div className="flex-column">
+        <div className="home-container">
 
-            <Link to="/ReadArrayElements">
-                Find Common Elements in an object
-            </Link>
+            <p className="program-list">
+                Select a topic to view the program
+            </p>
 
-            <br /><br />
+            <div className="program-list">
 
-            <Link to="/MoveZeroToEnd">
-                Move Zero To End
-            </Link>
+                {menuItems.map((item, index) => (
+                    <Link
+                        key={item.path}
+                        to={item.path}
+                        className="program-link"
+                    >
+                        <span className="program-number">
+                            {index + 1}
+                        </span>
 
-            <br /><br />
+                        <span>
+                            {item.title}
+                        </span>
 
-            <Link to="/UseRefHook">
-                Use Ref Hooks
-            </Link>
-            <br /><br />
-            <Link to="/numbersummation">
-                Divide by 3 & 5 sum
-            </Link>
-            <br /><br />
-            <Link to="/timer">
-                Time
-            </Link>
+                        <span className="arrow">
+                            →
+                        </span>
+                    </Link>
+                ))}
+
+            </div>
+
         </div>
-        
-        </>
     );
 };
 

@@ -4,6 +4,7 @@ import Home from "../Components/Home/Home";
 import UseRefHook from "../Components/UseRefHook";
 import SumOfNumbersBy3and5 from "../Components/SumOfNumbersBy3and5";
 import Timer from "../Components/Timer";
+import ReverseSentenceString from "../Components/ReverseSentenceString";
 const programRoutes = 
     [ 
         {
@@ -29,6 +30,10 @@ const programRoutes =
         {
             path: "/timer",
             element: <Timer />,
+        },
+        {
+            path: "/stringreverse",
+            element: <ReverseSentenceString />,
         },
 ];
 
