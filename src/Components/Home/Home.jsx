@@ -27,7 +27,31 @@ const Home = () => {
         {
             path: "/stringreverse",
             title: "Reverse String Sentence"
-        }
+        },
+        {
+            path: "/reversestring",
+            title: "Reverse String"
+        },
+        {
+            path: "/charcount",
+            title: "Count No of character"
+        },
+        {
+            path: "/uniquearray",
+            title: "Remove duplicates"
+        },
+        {
+            path: "/largestnumber",
+            title: "Find Largest Number"
+        },
+        {
+            path: "/secondlargestnumber",
+            title: "Find Second Largest Number"
+        },
+        {
+            path: "/arrayreverse",
+            title: "Reverse Array"
+        },
     ];
 
     return (
